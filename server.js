@@ -5,11 +5,11 @@ const app = express()
 
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "<Link do seu banco de dados MongoDB";
+const uri = "mongodb+srv://edyuser89:942573@cluster0.y3pgi.mongodb.net/Cluster0?retryWrites=true&w=majority";
 // Na linha logo acima, adicionar a URI do DB: Contendo userName + Password + nomeDoDataBase
 MongoClient.connect(uri, {useUnifiedTopology: true}, (err, client) => {
     if(err) return console.log(err);
-    db = client.db('<Name Data Base') //Nome do Banco de Dados
+    db = client.db('Cluster0') //Nome do Banco de Dados
 
     app.listen(3000, () => {
         console.log('Servidor rodando na porta 3000');
