@@ -5,7 +5,7 @@ const app = express()
 
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://edyuser89:942573@cluster0.y3pgi.mongodb.net/Cluster0?retryWrites=true&w=majority";
+const uri = "mongodb+srv://userName:Password@cluster0.y3pgi.mongodb.net/NameDataBase?retryWrites=true&w=majority";
 // Na linha logo acima, adicionar a URI do DB: Contendo userName + Password + nomeDoDataBase
 MongoClient.connect(uri, {useUnifiedTopology: true}, (err, client) => {
     if(err) return console.log(err);
